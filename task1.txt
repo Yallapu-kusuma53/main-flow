@@ -1,0 +1,144 @@
+# Creating a list, dictionary, and set
+my_list = [1, 2, 3, 4]
+my_dict = {'a': 1, 'b': 2, 'c': 3}
+my_set = {1, 2, 3}
+
+# 1. List Operations
+print("Original List:", my_list)
+
+# Adding an element to the list
+my_list.append(5)
+print("After adding an element to the list:", my_list)
+
+# Removing an element from the list
+my_list.remove(3)
+print("After removing an element from the list:", my_list)
+
+# Modifying an element in the list
+my_list[1] = 10
+print("After modifying an element in the list:", my_list)
+
+# Sorting the list
+my_list.sort()
+print("After sorting the list:", my_list)
+
+# Reversing the list
+my_list.reverse()
+print("After reversing the list:", my_list)
+
+# Finding the length of the list
+list_length = len(my_list)
+print("Length of the list:", list_length)
+
+# Checking if an element exists in the list
+element_exists = 4 in my_list
+print("Does 4 exist in the list?:", element_exists)
+
+
+# 2. Dictionary Operations
+print("\nOriginal Dictionary:", my_dict)
+
+# Adding a key-value pair to the dictionary
+my_dict['d'] = 4
+print("After adding a key-value pair to the dictionary:", my_dict)
+
+# Removing a key-value pair from the dictionary
+del my_dict['b']
+print("After removing a key-value pair from the dictionary:", my_dict)
+
+# Modifying a value in the dictionary
+my_dict['a'] = 100
+print("After modifying a value in the dictionary:", my_dict)
+
+# Accessing a value in the dictionary using a key
+value_a = my_dict.get('a')
+print("Value for key 'a':", value_a)
+
+# Getting all keys from the dictionary
+keys = my_dict.keys()
+print("All keys in the dictionary:", keys)
+
+# Getting all values from the dictionary
+values = my_dict.values()
+print("All values in the dictionary:", values)
+
+# Getting all key-value pairs as tuples
+items = my_dict.items()
+print("All key-value pairs in the dictionary:", items)
+
+
+# 3. Set Operations
+print("\nOriginal Set:", my_set)
+
+# Adding an element to the set
+my_set.add(4)
+print("After adding an element to the set:", my_set)
+
+# Removing an element from the set
+my_set.remove(2)
+print("After removing an element from the set:", my_set)
+
+# Performing set union (combine two sets)
+another_set = {4, 5, 6}
+union_set = my_set.union(another_set)
+print("Union of sets:", union_set)
+
+# Performing set intersection (common elements between sets)
+intersection_set = my_set.intersection(another_set)
+print("Intersection of sets:", intersection_set)
+
+# Performing set difference (elements in the first set but not in the second)
+difference_set = my_set.difference(another_set)
+print("Difference between sets:", difference_set)
+
+# Checking if an element exists in the set
+element_exists_in_set = 3 in my_set
+print("Does 3 exist in the set?:", element_exists_in_set)
+
+# Checking the size of the set
+set_size = len(my_set)
+print("Size of the set:", set_size)
+
+# Clearing the set
+my_set.clear()
+print("After clearing the set:", my_set)
+
+
+
+
+output:
+
+
+
+
+Original List: [1, 2, 3, 4]
+After adding an element to the list: [1, 2, 3, 4, 5]
+After removing an element from the list: [1, 2, 4, 5]
+After modifying an element in the list: [1, 10, 4, 5]
+After sorting the list: [1, 4, 5, 10]
+After reversing the list: [10, 5, 4, 1]
+Length of the list: 4
+Does 4 exist in the list?: True
+
+Original Dictionary: {'a': 1, 'b': 2, 'c': 3}
+After adding a key-value pair to the dictionary: {'a': 1, 'b': 2, 'c': 3, 'd': 4}
+After removing a key-value pair from the dictionary: {'a': 1, 'c': 3, 'd': 4}
+After modifying a value in the dictionary: {'a': 100, 'c': 3, 'd': 4}
+Value for key 'a': 100
+All keys in the dictionary: dict_keys(['a', 'c', 'd'])
+All values in the dictionary: dict_values([100, 3, 4])
+All key-value pairs in the dictionary: dict_items([('a', 100), ('c', 3), ('d', 4)])
+
+Original Set: {1, 2, 3}
+After adding an element to the set: {1, 2, 3, 4}
+After removing an element from the set: {1, 3, 4}
+Union of sets: {1, 3, 4, 5, 6}
+Intersection of sets: {4}
+Difference between sets: {1, 3}
+Does 3 exist in the set?: True
+Size of the set: 3
+After clearing the set: set()
+
+
+** Process exited - Return Code: 0 **
+Press Enter to exit terminal
